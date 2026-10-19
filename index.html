@@ -112,6 +112,15 @@
   .prod-card p.tag{ color:var(--white); font-style:normal; font-family:'Jost',sans-serif; font-weight:900; font-size:15.5px; letter-spacing:0.01em; margin-top:4px; }
   .placeholder-note{ font-size:11.5px; letter-spacing:0.05em; text-transform:uppercase; color:var(--faint); margin-top:6px; }
 
+  
+  /* ---------- PRODUCT LINKS ---------- */
+  .can-link{ display:block; align-self:center; }
+  .prod-can{ height:300px; width:auto; filter:drop-shadow(0 14px 24px rgba(0,0,0,.35)); transition:transform .35s ease; }
+  .can-link:hover .prod-can{ transform:translateY(-6px) scale(1.03); }
+  .prod-card h3 a{ text-decoration:none; color:inherit; }
+  .more{ font-size:12.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; color:var(--white); border-bottom:1px solid var(--hairline); padding-bottom:3px; margin-top:6px; }
+  .more:hover{ border-bottom-color:var(--white); }
+
   /* ---------- FOOTER ---------- */
   footer{ text-align:center; border-top:1px solid var(--hairline); }
   footer h2{ font-size:clamp(28px,4vw,40px); max-width:20ch; margin:0 auto; line-height:1.2; }
@@ -150,6 +159,7 @@
     <nav class="links">
       <a href="#why">What it is</a>
       <a href="#products">Products</a>
+      <a href="about.html">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn solid" href="#contact" style="padding:10px 22px; font-size:12.5px;">Get in touch</a>
@@ -188,51 +198,39 @@
     <div class="prod-grid">
 
       <div class="prod-card">
-        <svg class="prod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="14" y="6" width="20" height="36" rx="3" stroke="white" stroke-width="1.4"/>
-          <line x1="14" y1="14" x2="34" y2="14" stroke="white" stroke-width="1.4"/>
-        </svg>
-        <h3>Voila Classic</h3>
+        <a class="can-link" href="classic.html"><img class="prod-can" src="images/can-classic.webp" alt="Voila Classic can"></a>
+        <h3><a href="classic.html">Voila Classic</a></h3>
         <p>Voila Classic is Cola made to the standard the original never had to meet. Crisp, confident and entirely uncompromising on taste.</p>
         <p>Made for people who order the same thing every time, because they already know it's right.</p>
         <p class="tag">Not a healthier Cola. A better one.</p>
-        <div class="placeholder-note">Product image coming soon</div>
+        <a class="more" href="classic.html">Explore Voila Classic &rarr;</a>
       </div>
 
       <div class="prod-card">
-        <svg class="prod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="14" y="6" width="20" height="36" rx="3" stroke="white" stroke-width="1.4"/>
-          <line x1="14" y1="30" x2="34" y2="30" stroke="white" stroke-width="1.4"/>
-        </svg>
-        <h3>Voila SiZero</h3>
+        <a class="can-link" href="sizero.html"><img class="prod-can" src="images/can-sizero.webp" alt="Voila SiZero can"></a>
+        <h3><a href="sizero.html">Voila SiZero</a></h3>
         <p>Voila SiZero is a bold edged Cola built for people who treat discipline as a lifestyle, not a diet.</p>
         <p>It's for the ones counting nothing except how good they feel walking into the room.</p>
         <p class="tag">Zero isn't a size. It's a standard. Some people count calories. Others just drink SiZero.</p>
-        <div class="placeholder-note">Product image coming soon</div>
+        <a class="more" href="sizero.html">Explore Voila SiZero &rarr;</a>
       </div>
 
       <div class="prod-card">
-        <svg class="prod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="14" y="6" width="20" height="36" rx="3" stroke="white" stroke-width="1.4"/>
-          <circle cx="24" cy="24" r="6" stroke="white" stroke-width="1.4"/>
-        </svg>
-        <h3>Voila Kids</h3>
+        <a class="can-link" href="kids.html"><img class="prod-can" src="images/can-kids.webp" alt="Voila Kids can"></a>
+        <h3><a href="kids.html">Voila Kids</a></h3>
         <p>Voila Kids is a Cola parents can trust completely, made with the same care they already put into everything else on the table.</p>
         <p>It's for children who deserve a real treat, and parents who deserve the peace that comes with trusting what's in it.</p>
         <p class="tag">Made with love. Given with trust.</p>
-        <div class="placeholder-note">Product image coming soon</div>
+        <a class="more" href="kids.html">Explore Voila Kids &rarr;</a>
       </div>
 
       <div class="prod-card">
-        <svg class="prod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="14" y="6" width="20" height="36" rx="3" stroke="white" stroke-width="1.4"/>
-          <path d="M18 26 L22 30 L30 20" stroke="white" stroke-width="1.4" fill="none"/>
-        </svg>
-        <h3>HiQ</h3>
+        <a class="can-link" href="hiq.html"><img class="prod-can" src="images/can-hiq.webp" alt="HiQ can"></a>
+        <h3><a href="hiq.html">HiQ</a></h3>
         <p>HiQ is a beverage built to help your child excel, supporting memory, focus and the mental clarity growing minds need most.</p>
         <p>It's for kids and who they're becoming, making them truly future ready.</p>
         <p class="tag">Helps your kid come out with flying colours. Think clearly. Stay HiQ.</p>
-        <div class="placeholder-note">Product image coming soon</div>
+        <a class="more" href="hiq.html">Explore HiQ &rarr;</a>
       </div>
 
     </div>
