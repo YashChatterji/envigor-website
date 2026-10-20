@@ -54,3 +54,6 @@ footer{text-align:center;border-top:1px solid var(--hairline)}
 footer h2{font-size:clamp(28px,4vw,40px);max-width:20ch;margin:0 auto;line-height:1.2}
 footer p{margin-top:18px;font-size:16px}
 .foot-bottom{margin-top:80px;padding-top:26px;border-top:1px solid var(--hairline);font-size:12.5px;color:var(--faint);letter-spacing:.02em}
+
+/* keep content left-aligned inside flex sections */
+.about .wrap{width:100%}
