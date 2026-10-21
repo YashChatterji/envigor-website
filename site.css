@@ -57,3 +57,19 @@ footer p{margin-top:18px;font-size:16px}
 
 /* keep content left-aligned inside flex sections */
 .about .wrap{width:100%}
+
+/* ---------- immersive product pages ---------- */
+body.product{background:#0b0b0b}
+.scene{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background-size:cover;background-position:center;overflow:hidden;animation:drop .6s ease both}
+@media(prefers-reduced-motion:reduce){.scene{animation:none}}
+.scene:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55) 0,rgba(0,0,0,0) 150px,rgba(0,0,0,0) calc(100% - 170px),rgba(0,0,0,.6) 100%),linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.15) 30%,rgba(0,0,0,.15) 70%,rgba(0,0,0,.72) 100%)}
+.product header.nav{position:absolute;top:0;left:0;right:0;background:transparent;border-bottom:1px solid rgba(255,255,255,.18)}
+.btn.glass{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.45);color:#fff;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btn.glass:hover{background:rgba(255,255,255,.22)}
+.stage{position:relative;z-index:2;flex:1;display:flex;align-items:center;justify-content:center;gap:80px;padding:110px 40px 30px}
+.scene-foot{position:relative;z-index:2;text-align:center;padding:6px 20px 28px}
+.back-btn{display:inline-block;color:#fff;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:13px 28px;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.back-btn:hover{background:rgba(255,255,255,.22)}
+.scene-foot p{margin-top:16px;font-size:12.5px;color:rgba(255,255,255,.72);text-shadow:0 1px 4px rgba(0,0,0,.5)}
+.scene-foot p a{color:#fff;text-decoration:none;font-weight:700}
+@media(max-width:860px){.stage{flex-direction:column;gap:32px;padding:130px 20px 24px}}
