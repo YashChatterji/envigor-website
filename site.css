@@ -42,13 +42,13 @@ nav.links a:hover,nav.links a.on{color:var(--white)}
 /* about */
 .about{position:relative;min-height:820px;display:flex;align-items:center;overflow:hidden;padding:80px 0;animation:drop .6s ease both}
 @media(prefers-reduced-motion:reduce){.about{animation:none}}
-.about .wm{position:absolute;z-index:1;right:-4%;top:50%;transform:translateY(-50%);width:min(980px,110vw);opacity:.13;pointer-events:none}
+.about .wm{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:min(980px,110vw);opacity:.13;pointer-events:none}
 .plain{position:relative;z-index:2;max-width:680px}
 .plain .kicker{color:#fff;opacity:.8}
 .plain h1{font-size:clamp(32px,4.4vw,46px);line-height:1.12;margin-bottom:26px}
 .plain p{font-size:18px;color:rgba(255,255,255,.88);margin-bottom:14px}
 .plain .tag{color:#fff;font-weight:900;font-size:20px;padding:6px 0 6px 18px;border-left:2px solid rgba(255,255,255,.6);margin:22px 0}
-@media(max-width:860px){.about .wm{width:140vw;right:-30%;opacity:.1}}
+@media(max-width:860px){.about .wm{width:140vw;opacity:.1}}
 /* footer */
 footer{text-align:center;border-top:1px solid var(--hairline)}
 footer h2{font-size:clamp(28px,4vw,40px);max-width:20ch;margin:0 auto;line-height:1.2}

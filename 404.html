@@ -13,14 +13,14 @@
 @keyframes rise{0%{transform:translateY(0) translateX(0) scale(.85);opacity:0}10%{opacity:.9}50%{transform:translateY(-55vh) translateX(2px) scale(1);opacity:.75}90%{opacity:.55}100%{transform:translateY(-115vh) translateX(-1px) scale(1.05);opacity:0}}
 @media(prefers-reduced-motion:reduce){.bubble{animation:none;display:none}}
 .lost{position:relative;min-height:calc(100vh - 140px);min-height:calc(100svh - 140px);display:flex;align-items:center;overflow:hidden;padding:70px 0}
-.lost .wm{position:absolute;z-index:0;right:-4%;top:50%;transform:translateY(-50%);width:min(980px,110vw);opacity:.13;pointer-events:none}
+.lost .wm{position:absolute;z-index:0;left:50%;top:50%;transform:translate(-50%,-50%);width:min(980px,110vw);opacity:.13;pointer-events:none}
 .lost .wrap{position:relative;z-index:2;width:100%}
 .lost .num{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(96px,18vw,190px);line-height:.9;letter-spacing:-.02em;margin:0 0 14px}
 .lost h1{font-size:clamp(30px,4.6vw,48px);line-height:1.12;margin-bottom:18px}
 .lost p{font-size:18px;max-width:46ch}
 .lost .cta-row{justify-content:flex-start;margin-top:34px}
 .btn.line{background:transparent;color:#fff}
-@media(max-width:860px){.lost .wm{width:140vw;right:-30%;opacity:.1}}
+@media(max-width:860px){.lost .wm{width:140vw;opacity:.1}}
 </style></head><body>
 <div class="carbonation" id="carbonation" aria-hidden="true"></div>
 <header class="nav"><div class="nav-inner">
